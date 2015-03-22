@@ -23,7 +23,7 @@ Using composer you can add use this as your composer.json
 
     $app = new \Slim\Slim();	
 	
-	$app->add(new \SimoTod\Language\LanguageMiddleware($availableLanguages));
+	$app->add(new \SimoTod\Language\LanguageMiddleware($availableLanguages, $defaultLanguage));
 
 	$app->get('/hello', function () use ($app) {
 		//This route works for "/hello", "/en/hello", "/it/hello"

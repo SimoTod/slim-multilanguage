@@ -9,7 +9,8 @@ class LanguageMiddleware extends \Slim\Middleware
     {
         if(!is_array($languages)) $languages = array($languages);
         $this->availableLangs = $languages;
-        $this->app->container->singleton('locale', function () {
+        $app = \Slim\Slim::getInstance();
+        $app->container->singleton('locale', function () {
             return new Language($defaultLanguage);
         });
     }
