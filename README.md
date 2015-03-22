@@ -27,7 +27,7 @@ Using composer you can add use this as your composer.json
 
 	$app->get('/hello', function () use ($app) {
 		//This route works for "/hello", "/en/hello", "/it/hello"
-		if($app->language->get() == "it") {
+		if($app->locale->get() == "it") {
 			echo "Ciao mondo!";
 		} else {
 			echo "Hello world!";

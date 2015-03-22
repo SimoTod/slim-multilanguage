@@ -11,7 +11,7 @@ class LanguageMiddleware extends \Slim\Middleware
         $this->availableLangs = $languages;
         $app = \Slim\Slim::getInstance();
         $app->container->singleton('locale', function () {
-            return new Language($defaultLanguage);
+            return new Language($default);
         });
     }
 
