@@ -3,7 +3,7 @@
 This is an extension to the [SLIM framework](https://github.com/codeguy/Slim) vers.2 to enable simple route localization.
 
 ##Installation
-Using composer you can add use this as your composer.json
+Add dependecy to composer.json
 
 ```json
     {
